@@ -1,0 +1,1 @@
+assets organized into nicknames of their parent blogposts
