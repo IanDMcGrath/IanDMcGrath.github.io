@@ -11246,7 +11246,7 @@ textarea.form-control-lg {
     font-size: 1.5rem !important;
   }
 }
-@media print {
+/* @media print {
   .d-print-inline {
     display: inline !important;
   }
@@ -11286,7 +11286,7 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
-}
+} */
 html {
   height: 100%;
   scroll-padding-top: calc(4.5rem - 1px);
