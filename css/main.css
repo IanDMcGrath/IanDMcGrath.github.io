@@ -3,3 +3,7 @@
   height: 20rem;
   object-fit: cover;
 }
+
+a.basic-link {
+  color: var(--bs-white);
+}
