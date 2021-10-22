@@ -6,4 +6,6 @@
 
 a.basic-link {
   color: var(--bs-white);
+  text-decoration: none;
+  cursor: pointer;
 }
