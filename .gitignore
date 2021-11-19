@@ -1,4 +1,4 @@
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
+.DS_Store
+node_modules
+_drafts
+_posts
