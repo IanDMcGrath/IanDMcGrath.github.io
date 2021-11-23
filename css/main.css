@@ -9,3 +9,17 @@ a.basic-link {
   text-decoration: none;
   cursor: pointer;
 }
+
+.modal {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.modal.show {
+  display: block;
+  opacity: 1;
+}
+
+.portfolio-modal {
+  background-color: rgba(0, 0, 0, 0.5);
+}

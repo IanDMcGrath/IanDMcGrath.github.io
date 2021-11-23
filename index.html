@@ -7,6 +7,9 @@
         <meta name="description" content="Ian McGrath's software development portfolio" />
         <meta name="image" content="https://www.ians.tech/assets/img/portfolio/artcoag_screen.png" />
         <title>Freelancer - Start Bootstrap Theme</title>
+
+        <script src="./js/scripts.js"></script>
+
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -67,7 +70,7 @@
                 <div class="row justify-content-center">
                     <!-- Portfolio Item 1-->
                     <div class="col-md-6 col-lg-4 mb-5">
-                      <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                      <div id="portfolioModal1-btn-open" class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                           <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
@@ -76,7 +79,7 @@
                     </div>
                     <!-- Portfolio Item 2-->
                     <div class="col-md-6 col-lg-4 mb-5">
-                      <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                      <div id="portfolioModal2-btn-open" class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
                         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                           <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
@@ -85,7 +88,7 @@
                     </div>
                     <!-- Portfolio Item 3-->
                     <div class="col-md-6 col-lg-4 mb-5">
-                      <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                      <div id="portfolioModal3-btn-open" class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
                         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                           <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
@@ -94,31 +97,13 @@
                     </div>
                     <!-- Portfolio Item 4-->
                     <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                        <div id="portfolioModal4-btn-open" class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio/vrprotein_screenshot.jpeg" alt="screenshot of Dynamic Virtual Protein Project as presented at SIGGRAPH Asia 2019's Real-time Live event" />
                         </div>
                     </div>
-                    <!-- Portfolio Item 5-->
-                    <!-- <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="..." />
-                        </div>
-                    </div> -->
-                    <!-- Portfolio Item 6-->
-                    <!-- <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="..." />
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </section>
@@ -136,7 +121,7 @@
             <!-- About Section Content-->
             <div class="row">
               <div class="col-lg-4 ms-auto"><p class="lead">I am a Software Engineer, Fullstack Developer with skills in Javascript, Ruby on Rails, React, Redux. I'm an Unreal Engine Developer, 3D generalist, SIGGRAPH SIGGRAPH Asia 2019 Real-time Live Presenter</p></div>
-              <div class="col-lg-4 me-auto"><p class="lead">I have a passion for games and 3D design. But don't let that fool you; I have a strong sense for interactive design as a result.</p></div>
+              <div class="col-lg-4 me-auto"><p class="lead">I have a passion for games and 3D design and have a strong sense for interactive design.</p></div>
             </div>
             <!-- About Section Button-->
             <div class="text-center mt-4">
@@ -161,7 +146,7 @@
                 <!-- Contact Section Form-->
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
-                      Through <a href="https://www.linkedin.com/in/ianmcgrath-techartist/">LinkedIn</a>
+                      Through <a href="https://www.linkedin.com/in/ianmcgrath-techartist/" target="_blank">LinkedIn</a>
                         <!-- * * * * * * * * * * * * * * *-->
                         <!-- * * SB Forms Contact Form * *-->
                         <!-- * * * * * * * * * * * * * * *-->
@@ -258,7 +243,7 @@
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
             <div class="modal-dialog modal-xl">
               <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-header border-0"><button id="portfolioModal1-btn-x" class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
                 <div class="modal-body text-center pb-5">
                   <div class="container">
                     <div class="row justify-content-center">
@@ -274,8 +259,8 @@
                         <!-- Portfolio Modal - Image-->
                         <img class="img-fluid rounded mb-5" src="assets/img/portfolio/machblitzThumbnail.png" alt="screenshot of my JavaScript project, racing game, Machblitz" />
                         <!-- Portfolio Modal - Text-->
-                        <p class="mb-4"><a href="https://www.ians.tech/machblitz/">Live site</a> Video demo tbd... Machblitz. JavaScript | Three.js | Blender | Substance3D/SubstancePainter | Substance Designer | Photoshop | Webpack | CSS. Racing game leveraging Three.js library and my past 3D experience. This was a good learning opportunity to better understand obj / fbx file formats, the Blender exporter, and the Three.js importer. Mach-Blitz ultimately served as my JavaScript break-in project. </p>
-                        <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                        <p class="mb-4"><a href="https://www.ians.tech/machblitz/">Live site</a> | <a href="https://github.com/IanDMcGrath/aa_js">Github</a> Machblitz. JavaScript | Three.js | Blender | Substance3D/SubstancePainter | Substance Designer | Photoshop | Webpack | CSS. Racing game leveraging Three.js library and my past 3D experience. This was a good learning opportunity to better understand obj / fbx file formats, the Blender exporter, and the Three.js importer. Machblitz ultimately served as my JavaScript break-in project and was originally intended to be a quaternion visualization tool. While not a learning tool for others, quaternions are still used for the camera and vehicle motion so please check out the github. </p>
+                        <button id="portfolioModal1-btn-close" class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                           <i class="fas fa-times fa-fw"></i>
                           Close Window
                         </button>
@@ -290,7 +275,7 @@
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-header border-0"><button id="portfolioModal2-btn-x" class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
                     <div class="modal-body text-center pb-5">
                         <div class="container">
                             <div class="row justify-content-center">
@@ -306,8 +291,8 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/artCoagThumbnail.png" alt="screenshot of my Ruby on Rails & AWS project, Artcoag" />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4"><a href="http://artcoag.herokuapp.com/#/">Live site</a> Video demo tbd... Artcoag is an image hosting app for artists to use for promotion. Upload new projects or browse existing art. Artcoag is a clone of Artstation. Ruby on Rails | JavaScript | React.js | Redux.js | Amazon Web Services | AWS S3 | CSS | Webpack. </p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                    <p class="mb-4"><a href="http://artcoag.herokuapp.com/#/">Live site</a> | <a href="https://github.com/IanDMcGrath/artcoag">Github</a> Artcoag is an image hosting app for artists to use for promotion. Upload new projects or browse existing art. Artcoag is a clone of Artstation. Ruby on Rails | JavaScript | React.js | Redux.js | Amazon Web Services | AWS S3 | CSS | Webpack. </p>
+                                    <button id="portfolioModal2-btn-close" class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
                                     </button>
@@ -322,7 +307,7 @@
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-header border-0"><button id="portfolioModal3-btn-x" class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
                     <div class="modal-body text-center pb-5">
                         <div class="container">
                             <div class="row justify-content-center">
@@ -338,8 +323,8 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/hotSpotThumbnail.png" alt="screenshot of a team's MERN project, HotSpot" />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4"><a href="https://hotspot-mern.herokuapp.com/#/home">Live site</a> Video demo tbd... HotSpot is a social media app in whic users can join groups then create and share events with members of those groups. MERN | MongoDB | Express.js | React.js | NoSQL | JavaScript | Redux.js | Google Maps API | Amazon Web Services | AWS S3 | CSS.</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                    <p class="mb-4"><a href="https://hotspot-mern.herokuapp.com/#/home">Live site</a> | <a href="https://github.com/MiDeshay/HotSpot">Github</a> HotSpot is a social media app in whic users can join groups then create and share events with members of those groups. MERN | MongoDB | Express.js | React.js | NoSQL | JavaScript | Redux.js | Google Maps API | Amazon Web Services | AWS S3 | CSS.</p>
+                                    <button id="portfolioModal3-btn-close" class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
                                     </button>
@@ -354,7 +339,7 @@
         <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-header border-0"><button id="portfolioModal4-btn-x" class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
                     <div class="modal-body text-center pb-5">
                         <div class="container">
                             <div class="row justify-content-center">
@@ -371,71 +356,7 @@
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/vrprotein_screenshot.jpeg" alt="screenshot of Dynamic Virtual Protein Project as presented at SIGGRAPH Asia 2019's Real-time Live event" />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4"><a href="https://sa2019.siggraph.org/attend/real-time-live/session/111">SIGGRAPH</a> | <a href="https://imci.uidaho.edu/2019/12/04/dynamic-virtual-protein-project-wins-international-award/">IMCI</a> | Unreal Engine 4 | Protein Data Bank | Blender. The Dynamic Virtual Protein Project is a gradeschool - college level teaching tool for protein mechanisms and behaviors. If you'd like to know more, you should contact me <a href="https://www.linkedin.com/in/ianmcgrath-techartist/">here</a>!</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                    <button id="portfolioModal4-btn-close" class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
                                     </button>
@@ -447,13 +368,12 @@
             </div>
         </div>
         <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
     </body>
 </html>
