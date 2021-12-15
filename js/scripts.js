@@ -98,8 +98,8 @@ class ModalHandler {
   }
 
   toggleModal = (modal, e) => {
-    e.stopPropagation();
-    e.preventDefault();
+    // e.stopPropagation();
+    // e.preventDefault();
 
     // stops the modal from closing when clicking contents within the modal
     if (e.currentTarget.classList.contains("portfolio-modal")) {
