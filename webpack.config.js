@@ -1,19 +1,20 @@
 const path = require("path");
-const portFinderSync = require('portfinder-sync');
 const browserSyncPlugin = require('browser-sync-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const devMode = process.env.NODE_ENV !== "production";
 
 
 module.exports = {
-  entry: "./src/index.jsx",
+  entry: './index.jsx',
   output: {
-    filename: "main.js",
+    filename: "[name].js",
     path: path.resolve(__dirname, "dist")
   },
+  context: path.resolve(__dirname, 'src'),
   mode: 'development',
   devtool: 'source-map',
   resolve: {
-    extensions: ['.js', '.jsx', '*', '.css']
+    extensions: ['.js', '.jsx']
   },
   plugins:
     [
@@ -23,14 +24,12 @@ module.exports = {
         files: ['./dist/*.html','./src/*'],
         server: { baseDir: ['dist'] }
       }),
-      new MiniCssExtractPlugin()
-    ],
+    ].concat(devMode ? [] : [new MiniCssExtractPlugin()]),
   module:
   {
     rules:
     [
-      // HTML
-      {
+      { // HTML
         test: /\.(html)$/i,
         loader: 'html-loader',
         options: {
@@ -47,14 +46,13 @@ module.exports = {
                   ) {
                     return true;
                   }
-
                   return false;
                 }
               },
             ]
           }
         }
-      }, {
+      }, { // .js and .jsx
         test: /\.jsx?$/,
         exclude: /(node_modules)/,
         use: {
@@ -63,22 +61,28 @@ module.exports = {
             presets: ['@babel/env', '@babel/react']
           }
         }
-      }, {
+      }, { // images
         test: /\.(png|jpe?g|gif)$/i,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[path][name].[ext]',
+            outputPath: 'assets',
+            // publicPath: 'assets',
+          },
+        },
+      }, { // CSS
+        test: /\.((c|sa|sc)ss)$/i,
         use: [
+          "style-loader",
           {
-            loader: 'file-loader',
+            loader: "css-loader",
             options: {
-              publicPath: 'assets/images',
+              importLoaders: 1,
             },
           },
         ],
       },
-      // CSS
-      {
-        test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
-      }
     ]
   }
 };
