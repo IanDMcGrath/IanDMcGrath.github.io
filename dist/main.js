@@ -276,20 +276,20 @@ var PfItem = /*#__PURE__*/function (_React$Component) {
           thumbnail = _this$props.thumbnail,
           altText = _this$props.altText;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-        "class": "col-md-6 col-lg-4 mb-5"
+        className: "col-md-6 col-lg-4 mb-5"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
         id: "portfolioModal1-btn-open",
-        "class": "portfolio-item mx-auto",
+        className: "portfolio-item mx-auto",
         "data-bs-toggle": "modal",
         "data-bs-target": "#portfolioModal1"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-        "class": "portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+        className: "portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-        "class": "portfolio-item-caption-content text-center text-white"
+        className: "portfolio-item-caption-content text-center text-white"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-        "class": "fas fa-plus fa-3x"
+        className: "fas fa-plus fa-3x"
       }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-        "class": "img-fluid",
+        className: "img-fluid",
         src: thumbnail,
         alt: altText
       })));
@@ -364,90 +364,90 @@ var Portfolio = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-        "class": "page-section portfolio",
+        className: "page-section portfolio",
         id: "portfolio"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-        "class": "container"
+        className: "container"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-        "class": "page-section-heading text-center text-uppercase text-secondary mb-0"
+        className: "page-section-heading text-center text-uppercase text-secondary mb-0"
       }, "Portfolio"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-        "class": "divider-custom"
+        className: "divider-custom"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-        "class": "divider-custom-line"
+        className: "divider-custom-line"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-        "class": "divider-custom-icon"
+        className: "divider-custom-icon"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-        "class": "fas fa-star"
+        className: "fas fa-star"
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-        "class": "divider-custom-line"
+        className: "divider-custom-line"
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-        "class": "row justify-content-center"
+        className: "row justify-content-center"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-        "class": "col-md-6 col-lg-4 mb-5"
+        className: "col-md-6 col-lg-4 mb-5"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
         id: "portfolioModal1-btn-open",
-        "class": "portfolio-item mx-auto",
+        className: "portfolio-item mx-auto",
         "data-bs-toggle": "modal",
         "data-bs-target": "#portfolioModal1"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-        "class": "portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+        className: "portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-        "class": "portfolio-item-caption-content text-center text-white"
+        className: "portfolio-item-caption-content text-center text-white"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-        "class": "fas fa-plus fa-3x"
+        className: "fas fa-plus fa-3x"
       }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-        "class": "img-fluid",
+        className: "img-fluid",
         src: _assets_images_portfolio_machblitzThumbnail_png__WEBPACK_IMPORTED_MODULE_1__["default"],
         alt: "screenshot of my JavaScript project, racing game, Machblitz"
       }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-        "class": "col-md-6 col-lg-4 mb-5"
+        className: "col-md-6 col-lg-4 mb-5"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
         id: "portfolioModal2-btn-open",
-        "class": "portfolio-item mx-auto",
+        className: "portfolio-item mx-auto",
         "data-bs-toggle": "modal",
         "data-bs-target": "#portfolioModal2"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-        "class": "portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+        className: "portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-        "class": "portfolio-item-caption-content text-center text-white"
+        className: "portfolio-item-caption-content text-center text-white"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-        "class": "fas fa-plus fa-3x"
+        className: "fas fa-plus fa-3x"
       }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-        "class": "img-fluid",
+        className: "img-fluid",
         src: _assets_images_portfolio_artCoagThumbnail_png__WEBPACK_IMPORTED_MODULE_2__["default"],
         alt: "screenshot of my Ruby on Rails & AWS project, Artcoag"
       }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-        "class": "col-md-6 col-lg-4 mb-5"
+        className: "col-md-6 col-lg-4 mb-5"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
         id: "portfolioModal3-btn-open",
-        "class": "portfolio-item mx-auto",
+        className: "portfolio-item mx-auto",
         "data-bs-toggle": "modal",
         "data-bs-target": "#portfolioModal3"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-        "class": "portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+        className: "portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-        "class": "portfolio-item-caption-content text-center text-white"
+        className: "portfolio-item-caption-content text-center text-white"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-        "class": "fas fa-plus fa-3x"
+        className: "fas fa-plus fa-3x"
       }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-        "class": "img-fluid",
+        className: "img-fluid",
         src: _assets_images_portfolio_hotSpotThumbnail_png__WEBPACK_IMPORTED_MODULE_3__["default"],
         alt: "screenshot of a team's MERN project, HotSpot"
       }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-        "class": "col-md-6 col-lg-4 mb-5 mb-lg-0"
+        className: "col-md-6 col-lg-4 mb-5 mb-lg-0"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
         id: "portfolioModal4-btn-open",
-        "class": "portfolio-item mx-auto",
+        className: "portfolio-item mx-auto",
         "data-bs-toggle": "modal",
         "data-bs-target": "#portfolioModal4"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-        "class": "portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+        className: "portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-        "class": "portfolio-item-caption-content text-center text-white"
+        className: "portfolio-item-caption-content text-center text-white"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-        "class": "fas fa-plus fa-3x"
+        className: "fas fa-plus fa-3x"
       }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-        "class": "img-fluid",
+        className: "img-fluid",
         src: _assets_images_portfolio_vrprotein_screenshot_jpeg__WEBPACK_IMPORTED_MODULE_4__["default"],
         alt: "screenshot of Dynamic Virtual Protein Project as presented at SIGGRAPH Asia 2019's Real-time Live event"
       }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pfItem__WEBPACK_IMPORTED_MODULE_5__["default"], {
